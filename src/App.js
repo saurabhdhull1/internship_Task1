@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./components/Navbar/Footer/Footer";
+import Main from "./components/Navbar/main/Main";
+import Navbar from "./components/Navbar/navbar/Navbar";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Main />
+      <Footer />
+      <a href="#topImg" className="GoToTop">
+        <img src="gallary/up-arrow-svgrepo-com.svg" alt="" />
+      </a>
     </div>
   );
 }

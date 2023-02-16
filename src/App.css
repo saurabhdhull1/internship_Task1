@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* !Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  background-color: #000000;
+  border-radius: 10px;
+  border-radius: 0;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 0, 0);
+  border-radius: 10px;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.footer_logo{
   display: flex;
-  flex-direction: column;
+  gap: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.footer_logo span{
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .5s;
+}
+.footer_logo span:hover{
+  background-color: #000000;
+  color: white;
+
+}
+
+.GoToTop{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #ff0000a9;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.GoToTop img{
+  height: 20px;
+}
+.GoToTop:hover{
+  background-color: #ff0101;
+  box-shadow: 3px 3px 15px #ff0101;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:768px){
+  body{
+    padding-top:100px;
   }
-  to {
-    transform: rotate(360deg);
+  footer{
+    padding: 20px;
   }
 }
